@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(fonts/DS-DIGI.TTF);
+}
+
+@font-face {
+    font-family: 'BackToSchoolFont';
+    src: url(fonts/BackToSchool.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/basketball-cover.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+h1 {
+    font-family: 'BackToSchoolFont';
+    font-weight: 300;
+}
+
+.digital-text, button {
+    font-family: 'digital', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.scoreboard {
+    width: 450px; 
+    height: 250px; 
+    background-color: #f8f9fa; 
+    border: 1px solid #111314; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 20px; 
+}
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.home-column, .guest-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    font-size: 20px;
+}
+
+/* .home-column {
+    padding: 10px;
+    font-size: 20px;
+} */
+
+.timer-column {
+    padding: 10px;
+    font-size: 40px;
+} 
+
+/* .guest-column {
+    padding: 10px;
+    font-size: 20px;
+} */
+
+#home-score-display, #guest-score-display,  #timer-display{
+    background-color: black;
+    color: #F5653B; 
+    text-shadow: 0 0 5px #F5653B; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 40px;
+}
+
+.btn {
+    padding: 2px 8px;
+    background-color: #D32F2F; 
+    color: white;
+    border: none;
+    border-radius: 3px; 
+    margin: 0 2px; 
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn {
+    font-family: 'Digital'; 
+    font-weight: bold;
+    font-size: 12px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.start-btn { border-color: #4CAF50; color: #4CAF50; }
+.stop-btn { border-color: #f5b03b; color: #f5b03b; }
+.reset-btn { border-color: #D32F2F; color: #D32F2F; }
+
+.start-btn:hover { background-color: #4CAF50; color: white; }
+.stop-btn:hover { background-color: #f5b03b; color: white; }
+.reset-btn:hover { background-color: #D32F2F; color: white; }
+
+.timer-btn {
+    display: flex;
+    gap: 6px
+}
+
+@media (max-width: 600px) {
+    .scoreboard {
+        flex-direction: column;
+        height: auto;
+        width: 90vw; 
+        gap: 20px;
+        padding-top: 50px; 
+    }
+
+    .logo-container {
+        position: static;
+        transform: none; 
+        order: -1; 
+        margin-bottom: -40px; 
+    }
+
+    #timer-display, #home-score-display, #guest-score-display {
+        font-size: 32px;
+    }
+
+    .timer-container {
+        gap: 15px;
+    }
+}
