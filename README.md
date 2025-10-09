@@ -5,6 +5,10 @@ A simple and interactive basketball scoreboard built with HTML, CSS, and vanilla
 ### 📸 Screenshot
 <img width="1919" height="874" alt="image" src="https://github.com/user-attachments/assets/59e16504-0d03-441d-92cb-4e2a7dd2fd89" />
 
+### 🚀 Live Demo
+
+- [**View on Netlify**](https://clinquant-bombolone-e92fa3.netlify.app/)
+
 ## ✨ Features
 
 - **Score Tracking:** Add +1, +2, or +3 points for both the Home and Guest teams.
