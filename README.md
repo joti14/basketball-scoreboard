@@ -1,6 +1,6 @@
-# 🏀 Basketball Scoreboard
+# 🏀 Basketball Scoreboard Project
 
-A simple and interactive basketball scoreboard built with HTML, CSS, and vanilla JavaScript. This project was created to practice fundamental front-end development skills, including DOM manipulation, event handling, and creating a responsive layout.
+A simple and interactive basketball scoreboard built with HTML, CSS, and vanilla JavaScript. 
 
 ### 📸 Screenshot
 <img width="1919" height="874" alt="image" src="https://github.com/user-attachments/assets/59e16504-0d03-441d-92cb-4e2a7dd2fd89" />
